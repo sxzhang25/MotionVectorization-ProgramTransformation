@@ -5,8 +5,8 @@ from torch.optim.lr_scheduler import CyclicLR
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.spatial.distance import cdist
-from scipy.interpolate import griddata
+# from scipy.spatial.distance import cdist
+# from scipy.interpolate import griddata
 from tqdm import tqdm
 import time
 

@@ -1,8 +1,8 @@
 import os
 import numpy as np
 import cv2
-import torch
-from scipy import interpolate
+# import torch
+# from scipy import interpolate
 
 from .utils import get_numbers
 
