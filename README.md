@@ -41,7 +41,7 @@ If your setup is correct, you should be able to run
 ./scripts/script.sh videos/test.txt
 ```
 
-This should produce a series of outputs in `motion_vectorization/outputs/test1_None/`, including the files `time_bank.pkl`, `shape_bank.pkl`, and `motion_file.json`. To see logs that might be useful for error tracking, you can check the `motion_vectorization/logs/` directory. **Note: This step may take a while, especially for longer and more complicated videos.**
+This should produce a series of outputs in `motion_vectorization/outputs/test1_None/`, including the files `time_bank.pkl`, `shape_bank.pkl`, and `motion_file.json`. To see logs that might be useful for error tracking, you can check the `motion_vectorization/logs/` directory. **Note: This step may take several hours, especially for longer and more complicated videos.**
 
 After this script is done running, you can generate an SVG from the motion file JSON file by running
 
