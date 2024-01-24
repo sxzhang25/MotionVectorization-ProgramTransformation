@@ -1,7 +1,7 @@
 # Editing Motion Graphics Video via Motion Vectorization and Program Transformation
 
 ## Setup
-This project was tested using Python 3.8 and CUDA v12.0 on Ubuntu 20.04.6. It depends on the following packages:
+This project was tested using Python 3.8 and CUDA v12.0 on Ubuntu 20.04.6. To set up your conda environment, please install the following packages:
 
 ```
 - cv2
@@ -24,6 +24,13 @@ This project was tested using Python 3.8 and CUDA v12.0 on Ubuntu 20.04.6. It de
 - drawsvg (v1.x)
 - easing-functions (https://spicyyoghurt.com/tools/easing-functions)
 ```
+
+#### Directory structure
+The `motion_vectorization/` directory contains most of the files relevant to motion vectorization. Within this folder, you can modify the JSON files in the `config/` subdirectory to adjust the motion vectorization parameters.
+
+The `scripts/` directory contains all scripts needed to run motion vectorization. The main scripts to run are `scripts/script.sh` and `convert_to_svg.sh`.
+
+The `videos/` folder contains all video files (e.g., `demo.mp4`, `giftbox.mp4`, `test1.mp4`). All videos should be saved to this file. The file `videos/videos.txt` can be modified to adjust what videos to process.
 
 ## Motion Vectorization
 
