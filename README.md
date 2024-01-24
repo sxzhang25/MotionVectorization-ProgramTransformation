@@ -1,5 +1,7 @@
 # Editing Motion Graphics Video via Motion Vectorization and Program Transformation
 
+Links: [project page](https://sxzhang25.github.io/publications/motion-vectorization.html) | [paper pdf](https://sxzhang25.github.io/publications/pdfs/motion-vectorization-paper.pdf) | [video](https://github.com/sxzhang25/sxzhang25.github.io/raw/main/publications/vids/motion-vectorization-video.mp4)
+
 ## Setup
 This project was tested using Python 3.8 and CUDA v12.0 on Ubuntu 20.04.6. To set up your conda environment, please install the following packages:
 
