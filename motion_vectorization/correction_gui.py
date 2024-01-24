@@ -179,11 +179,11 @@ def update_canonical_img():
         new_shape_rgba = np.concatenate([G_CURR_FRAME_RGB, np.uint8(255 * new_alpha)], axis=-1)
         new_shape_rgba = new_shape_rgba[min_y:max_y, min_x:max_x]
         G_TIME_BANK['shapes'][G_CURR_FRAME_IDX][select_idx]['coords'] = ((min_x, min_y), (max_x, max_y))
-        cv2.imwrite(os.path.join('outputs', f'{G_VIDEO_NAME}_{G_SUFFIX}', 'shapes', f'{select_idx}.png'), new_shape_rgba)
+        cv2.imwrite(os.path.join('motion_vectorization', 'outputs', f'{G_VIDEO_NAME}_{G_SUFFIX}', 'shapes', f'{select_idx}.png'), new_shape_rgba)
 
 
 def save():
-    outfile = os.path.join('outputs', f'{G_VIDEO_NAME}_{G_SUFFIX}', 'time_bank.pkl')
+    outfile = os.path.join('motion_vectorization', 'outputs', f'{G_VIDEO_NAME}_{G_SUFFIX}', 'time_bank.pkl')
     with open(outfile, 'wb') as handle:
         pickle.dump(G_TIME_BANK, handle)
     print('Saved to:', outfile)
@@ -230,7 +230,7 @@ def main():
 
     G_RGB_FOLDER = os.path.join('videos', G_VIDEO_NAME, 'rgb')
     G_FRAME_IDXS = get_numbers(G_RGB_FOLDER)
-    G_TIME_BANK_FILE = os.path.join('outputs', f'{G_VIDEO_NAME}_{G_SUFFIX}', 'time_bank.pkl')
+    G_TIME_BANK_FILE = os.path.join('motion_vectorization', 'outputs', f'{G_VIDEO_NAME}_{G_SUFFIX}', 'time_bank.pkl')
     G_TIME_BANK = pickle.load(open(G_TIME_BANK_FILE, 'rb'))
     G_MAX_FRAME = len(G_TIME_BANK['shapes'])
 
