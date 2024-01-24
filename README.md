@@ -25,6 +25,8 @@ This project was tested using Python 3.8 and CUDA v12.0 on Ubuntu 20.04.6. To se
 - easing-functions (https://spicyyoghurt.com/tools/easing-functions)
 ```
 
+This project also uses the [RAFT](https://github.com/princeton-vl/RAFT) repository. Refer to the instructions in that repository to download the proper model files.
+
 #### Directory structure
 The `motion_vectorization/` directory contains most of the files relevant to motion vectorization. Within this folder, you can modify the JSON files in the `config/` subdirectory to adjust the motion vectorization parameters.
 
